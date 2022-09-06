@@ -5,8 +5,19 @@ class Shape:
     def print_args(self,args):
         print(f'{args}')
 
-    def get_area(self, args):
+    def get_area(self):
         pass
+
+
+
+
+
+
+
+
+
+
+
 
 class Rectangle(Shape):
     def __init__(self, args):
