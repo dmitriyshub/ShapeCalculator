@@ -1,0 +1,14 @@
+from Shape import Shape
+class Triangle(Shape):
+    def __init__(self, base, height):
+        super().__init__(base, height)
+        self.base = base
+        self.height = height
+
+    def get_area(self):
+        return (self.base * self.height) / 2
+
+    def __str__(self):
+        return (f'the height of the triangle is {self.height} '
+                f'\nthe base of the triangle is {self.base}'
+                f'\nthe area of the triangle is {self.get_area()}')

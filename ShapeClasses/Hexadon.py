@@ -1,4 +1,4 @@
-from Shape import Shape
+from ShapeClasses import Shape
 import math
 
 class Hexadon(Shape):
@@ -13,10 +13,10 @@ class Hexadon(Shape):
         return area
 
 
-c = Hexadon(10)
-print(c)
-ans = c.get_area()
-print(ans)
+# c = Hexadon(10)
+# print(c)
+# ans = c.get_area()
+# print(ans)
 
 
 

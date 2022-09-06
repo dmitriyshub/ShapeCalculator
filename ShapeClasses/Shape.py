@@ -1,4 +1,7 @@
 class Shape:
+    """
+    Main Shape Class
+    """
     def __init__(self, args):
         self.args = args
 
