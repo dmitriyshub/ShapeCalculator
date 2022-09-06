@@ -2,28 +2,12 @@ class Shape:
     def __init__(self, args):
         self.args = args
 
-    def print_args(self,args):
-        print(f'{args}')
+    def __str__(self):
+        return f'The area of this {self.__class__.__name__} is {self.get_area()}'
 
     def get_area(self):
         pass
 
 
-
-
-
-
-
-
-
-
-
-
-class Rectangle(Shape):
-    def __init__(self, args):
-        super().__init__(args)
-
-    def get_area(self, args):
-        pass
 
 
