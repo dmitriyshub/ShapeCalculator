@@ -4,12 +4,12 @@ class Rectangle(Shape):
     """
     Rectangle Class: Yishay
     """
-    def __init__(self,base,area=0):
+    def __init__(self,base):
         Shape.__init__(self, base)
-        self.area = area
+        self.area = 0
 
 
-    def getarea(self):
+    def get_area(self):
         self.area = (self.base*self.base)
         return self.area
 
