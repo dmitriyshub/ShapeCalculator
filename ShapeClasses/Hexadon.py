@@ -1,16 +1,17 @@
-from ShapeClasses import Shape
+from Shape import Shape
 import math
 
 class Hexadon(Shape):
     """
     Hexadon class: Dima
     """
-    def __init__(self, args):
-        super().__init__(args)
+    def __init__(self, base):
+        Shape.__init__(self,base)
+        self.args=base
 
     def get_area(self):
-        area = ((3 * math.sqrt(3) * (self.args * self.args)) / 2)
-        return area
+        self.area = ((3 * math.sqrt(3) * (self.base * self.base)) / 2)
+        return self.base
 
 
 # c = Hexadon(10)
